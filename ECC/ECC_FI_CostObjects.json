@@ -2,7 +2,7 @@
   "openapi" : "3.0.1",
   "info" : {
     "title" : "ECC FI CostObects",
-    "description" : "ECC Finance Cost Objects .",
+    "description" : "ECC Finance Cost Objects.",
     "version" : "0.2"
   },
   "servers" : [ {
@@ -25,7 +25,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "json"
+          "example" : "json , XML or XLSX"
         } ],
         "responses" : {
           "200" : {
