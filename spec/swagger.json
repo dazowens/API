@@ -12,7 +12,7 @@
     "/odata/VWK/Z016_LE_TRANSFER_ORDERS_SRV;v=1/TransferOrderSet" : {
       "get" : {
         "summary" : "ECC Transfer Orders ",
-        "description" : "SAP ECC Transfer Orders\n",
+        "description" : "SAP ECC Transfer Orders.\n",
         "tags" : [ "Queries" ]
       }
     }
