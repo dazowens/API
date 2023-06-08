@@ -1,0 +1,221 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "ECC FI CostObects",
+    "description" : "ECC Finance Cost Objects .",
+    "version" : "0.2"
+  },
+  "servers" : [ {
+    "url" : "http://bymccrsv0769.bentley.emea.vwg:8000"
+  } ],
+  "paths" : {
+    "/sap/opu/odata/VWK/016_FI_COSTOBJECTS_SRV/InternalOrderSet" : {
+      "get" : {
+        "description" : "Internal orders list",
+        "parameters" : [ {
+          "name" : "$top",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        }, {
+          "name" : "$format",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "json"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/atom+xml;type=feed; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              },
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://bymccrsv0769.bentley.emea.vwg:8000"
+        } ]
+      },
+      "post" : {
+        "description" : "Create Internal Order",
+        "parameters" : [ {
+          "name" : "x-csrf-token",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "uJcEUY3_wT8uk4sim6VmVw=="
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : { }
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{}"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "Internal Order successfully created",
+            "content" : {
+              "application/atom+xml;type=entry; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://bymccrsv0769.bentley.emea.vwg:8000"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "http://bymccrsv0769.bentley.emea.vwg:8000"
+      } ]
+    },
+    "/sap/opu/odata/VWK/016_FI_COSTOBJECTS_SRV/CostCentreSet" : {
+      "get" : {
+        "description" : "Cost Centre List",
+        "parameters" : [ {
+          "name" : "$top",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        }, {
+          "name" : "$format",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "json"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/atom+xml;type=feed; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              },
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://bymccrsv0769.bentley.emea.vwg:8000"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "http://bymccrsv0769.bentley.emea.vwg:8000"
+      } ]
+    },
+    "/sap/opu/odata/VWK/016_FI_COSTOBJECTS_SRV/WBSSet" : {
+      "get" : {
+        "description" : "WBS/Project List",
+        "parameters" : [ {
+          "name" : "$top",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        }, {
+          "name" : "$format",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "json"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/atom+xml;type=feed; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              },
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://bymccrsv0769.bentley.emea.vwg:8000"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "http://bymccrsv0769.bentley.emea.vwg:8000"
+      } ]
+    },
+    "//sap/opu/odata/VWK/016_FI_COSTOBJECTS_SRV/$metadata" : {
+      "get" : {
+        "description" : "Get Metadata & CSRF Token",
+        "parameters" : [ {
+          "name" : "sap-documentation",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "all"
+        }, {
+          "name" : "x-csrf-token",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "fetch"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "servers" : [ {
+          "url" : "http://bymccrsv0769.bentley.emea.vwg:8000"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "http://bymccrsv0769.bentley.emea.vwg:8000"
+      } ]
+    }
+  }
+}
